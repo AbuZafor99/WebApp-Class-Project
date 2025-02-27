@@ -1,0 +1,120 @@
+/* General Styles */
+* {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a0dad;
+    padding: 15px 50px;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #8a2be2;
+    border-radius: 5px;
+  }
+  
+  /* About Page Styles */
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .responsive-container-block.bigContainer {
+    padding: 10px 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mainImg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text-blk {
+    padding: 10px;
+    line-height: 25px;
+  }
+  
+  .text-blk.headingText {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(176, 98, 255);
+    margin-bottom: 5px;
+  }
+  
+  .text-blk.subHeadingText {
+    color: rgb(102, 102, 102);
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .text-blk.description {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+  
+  .explore {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(102, 102, 102);
+    border: 2px solid rgb(102, 102, 102);
+    cursor: pointer;
+    background-color: white;
+    padding: 8px 40px;
+  }
+  
+  .explore:hover {
+    background-color: rgb(176, 98, 255);
+    color: white;
+    border: none;
+  }
+  
