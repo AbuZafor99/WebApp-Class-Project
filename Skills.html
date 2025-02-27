@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Skills</title>
-    <link rel="stylesheet" href="Skills.css">
+    <title>Skills Chart (CSS Only)</title>
+    <link rel="stylesheet" href="skills.css">
 </head>
 <body>
     <nav>
@@ -13,8 +13,8 @@
         <div class="logo"><a href="#">CodingLab</a></div>
           <ul>
             <label class="btn cancel" for="check"><i class="fas fa-times"></i></label>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="Skills.html">Skills</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Feedback</a></li>
@@ -23,35 +23,54 @@
         </div>
       </div>
     </nav>
-    <div class="new_skills">
-        <div class="responsive-container-block bigContainer">
-            <div class="responsive-container-block Container">
-                <div class="responsive-container-block imgContainer">
-                    <div class="pinkBG"></div>
-                    <img class="bigImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp1.svg" alt="Top Skills Image">
+    <div class="skills_chart">
+        <div class="big-cont">
+            <div class="bg">
+                <p class="title">Skills Chart</p>
+                <p class="info">Your skill progress in different areas.</p>
+
+                <div class="prog-cont">
+                    <div class="prog" style="--pg: 70%">
+                        <p class="head">Chart 1</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+                    <div class="prog" style="--pg: 60%">
+                        <p class="head">Chart 2</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+                    <div class="prog" style="--pg: 85%">
+                        <p class="head">Chart 3</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+                    <div class="prog" style="--pg: 90%">
+                        <p class="head">Chart 4</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+                    <div class="prog" style="--pg: 45%">
+                        <p class="head">Chart 5</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+                    <div class="prog" style="--pg: 75%">
+                        <p class="head">Chart 6</p>
+                        <div class="outer">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="responsive-container-block textContainer">
-                    <p class="text-blk heading">Top Skills</p>
-                    <div class="textRow">
-                        <div class="bullet"></div>
-                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                    <div class="textRow">
-                        <div class="bullet"></div>
-                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                    <div class="textRow">
-                        <div class="bullet"></div>
-                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                    <div class="textRow last">
-                        <div class="bullet"></div>
-                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                    <a class="viewMore" href="#">View More</a>
-                </div>
+
             </div>
         </div>
     </div>
+
 </body>
 </html>

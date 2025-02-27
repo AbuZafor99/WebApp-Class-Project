@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="style_about.css">
+    <title>Top Skills</title>
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#" class="logo">MyWebsite</a>
-        <ul>
+    <nav>
+      <div class="menu">
+        <input type="checkbox" id="check">
+        <div class="logo"><a href="#">CodingLab</a></div>
+          <ul>
+            <label class="btn cancel" for="check"><i class="fas fa-times"></i></label>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="Skills.css">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+          <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
+        </div>
+      </div>
     </nav>
-
-    <!-- About Page Content -->
-    <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container bottomContainer">
-            <div class="ultimateImg">
-                <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp4.svg" alt="About Image">
-                <div class="purpleBox">
-                    <p class="purpleText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus lectus viverra in semper nec pretium mus.
-                    </p>
-                    <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg" alt="Stars">
+    <div class="new_skills">
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container">
+                <div class="responsive-container-block imgContainer">
+                    <div class="pinkBG"></div>
+                    <img class="bigImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp1.svg" alt="Top Skills Image">
                 </div>
-            </div>
-            <div class="allText bottomText">
-                <p class="text-blk headingText">About Me</p>
-                <p class="text-blk subHeadingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="text-blk description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.
-                </p>
-                <a class="explore" href="services.html">View Services</a>
+                <div class="responsive-container-block textContainer">
+                    <p class="text-blk heading">Top Skills</p>
+                    <div class="textRow">
+                        <div class="bullet"></div>
+                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="textRow">
+                        <div class="bullet"></div>
+                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="textRow">
+                        <div class="bullet"></div>
+                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <div class="textRow last">
+                        <div class="bullet"></div>
+                        <p class="text-blk bulletText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
+                    <a class="viewMore" href="#">View More</a>
+                </div>
             </div>
         </div>
     </div>
-
 </body>
 </html>
