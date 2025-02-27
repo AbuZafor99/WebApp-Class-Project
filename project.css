@@ -1,4 +1,3 @@
-/* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -95,88 +94,72 @@ nav label.cancel{
   display: none;
 }
 
-body {
-    font-family: Nunito, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-/* Skills Section */
-.developer_skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.responsive-container-block.bg {
-    max-width: 800px;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Projects Section */
+.projects-section {
     text-align: center;
+    padding: 40px 20px;
 }
 
-.text-blk.title {
+.title {
     font-size: 28px;
     font-weight: bold;
     color: #00b2eb;
-    margin-bottom: 10px;
 }
 
-.text-blk.heading {
+.subtitle {
     font-size: 18px;
     color: #666;
     margin-bottom: 30px;
 }
 
-/* Skill Cards */
-.responsive-container-block.content {
-    display: flex;
-    flex-wrap: wrap;
+/* Project Cards */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 or 3 per row */
     gap: 20px;
-    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.responsive-container-block.card {
-    width: 30%;
-    min-width: 200px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-.responsive-container-block.img {
-    width: 50px;
-    height: 50px;
-    background-image: url("https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eourcourses1.svg");
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto 10px;
-}
-
-/* Skill Bar */
-.skill-bar {
-    width: 100%;
-    height: 8px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
+.project-card {
+    background: #fff;
+    border-radius: 10px;
     overflow: hidden;
-    margin-top: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
-.fill {
-    height: 100%;
-    background-color: #00b2eb;
-    border-radius: 4px;
-    transition: width 1.5s ease-in-out;
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
-/* Skill Levels */
-.fill.html { width: 90%; }  /* HTML skill level */
-.fill.css { width: 80%; }   /* CSS skill level */
-.fill.js { width: 70%; }    /* JavaScript skill level */
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Project Info */
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
