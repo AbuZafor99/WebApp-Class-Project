@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">MyWebsite</div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+    <nav>
+        <div class="menu">
+            <input type="checkbox" id="check">
+            <div class="logo"><a href="index.html">Abu Zafor</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p>Have any questions? Reach out to us anytime, and we’ll be happy to assist you.</p>
-        <p>Email: contact@website.com | Phone: +123 456 7890</p>
-        <img class="hover-effect" src="https://via.placeholder.com/800x400" alt="Placeholder Image">
-        <img class="hover-effect" src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+
+    <div class="contact">
+        <h1>&bull; Keep in Touch &bull;</h1>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 </body>
 </html>
